@@ -1,0 +1,88 @@
+.news-letter {
+  background: linear-gradient(180deg, #fff5e1, #f9ffe122 60%);
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Styling for larger screens */
+.news-letter h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.news-letter p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #242020;
+}
+
+.news-letter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-letter input[type="email"] {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 300px;
+  max-width: 100%;
+}
+
+.news-letter input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+.news-letter button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .news-letter {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+  
+  .news-letter h1 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+  }
+  
+  .news-letter p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+  
+  .news-letter div {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px; /* Space between input and button */
+  }
+  
+  .news-letter input[type="email"] {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+  
+  .news-letter button {
+    width: 100%; /* Full width for smaller screens */
+    padding: 12px; /* Adjust padding to fit new width */
+  }
+}

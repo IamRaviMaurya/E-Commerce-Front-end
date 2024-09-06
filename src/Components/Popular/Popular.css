@@ -1,0 +1,52 @@
+/* Popular.css */
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for section */
+  height: auto; /* Remove fixed height for all screen sizes */
+}
+
+.popular h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.popular hr {
+  border: 0;
+  border-top: 2px solid #ff9800; /* Highlight color for the separator */
+  width: 50px; /* Adjust the width as needed */
+  margin: 0 auto 20px auto;
+}
+
+.popular-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Ensure each item takes equal space and adjusts for different screen sizes */
+.popular-item > * {
+  flex: 1 1 calc(33.333% - 40px); /* 3 items per row with gap adjustment */
+  max-width: calc(33.333% - 40px); /* Same as flex-basis to ensure correct sizing */
+}
+
+@media (max-width: 1024px) {
+  .popular-item > * {
+    flex: 1 1 calc(50% - 40px); /* 2 items per row on medium screens */
+    max-width: calc(50% - 40px); /* Same as flex-basis for consistent sizing */
+  }
+}
+
+@media (max-width: 600px) {
+  .popular-item > * {
+    flex: 35%; /* 1 item per row on small screens */
+    max-width: 100%; /* Full width */
+  }
+}

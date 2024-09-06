@@ -1,0 +1,66 @@
+/* Item.css */
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    margin: 10px;
+    max-width: 200px; /* Adjust as needed */
+  }
+  
+  .item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item img {
+    width: 100%; /* Makes image responsive to container width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures image covers container without distortion */
+  }
+  
+  .item p {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .item-price-new {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff9800; /* Highlight color for new price */
+  }
+  
+  .item-price-old {
+    font-size: 1rem;
+    color: #888;
+    text-decoration: line-through; /* Strikethrough for old price */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .item {
+      max-width: 100%; /* Allows item to take full width on small screens */
+      padding: 10px;
+    }
+    
+    .item-price-new, .item-price-old {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

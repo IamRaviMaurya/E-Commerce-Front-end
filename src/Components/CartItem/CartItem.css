@@ -1,0 +1,133 @@
+/* CartItem.css */
+
+.cart-item {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cart-item-format-main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.cart-item-format {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.cart-icon-product-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.cart-item-quantity {
+  font-weight: bold;
+}
+
+.cart-item-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-item-total {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-total h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-item-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cart-item-total-item p,
+.cart-item-total-item h3 {
+  margin: 0;
+}
+
+.cart-item-promo-code {
+  margin-top: 30px;
+}
+
+.cart-item-promo-code p {
+  margin-bottom: 10px;
+}
+
+.cart-item-promo-box {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-promo-box input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.cart-item-promo-box button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-promo-box button:hover {
+  background-color: #0056b3;
+}
+
+.cart-item-total button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.cart-item-total button:hover {
+  background-color: #ff9800;
+}
+
+.cart-item img[alt="Remove"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.cart-item hr {
+  border: none;
+  border-top: 1px solid #ff9800;
+  margin: 10px;
+}

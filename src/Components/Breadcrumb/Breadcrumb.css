@@ -1,0 +1,44 @@
+/* Breadcrumb.css */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between breadcrumb items */
+    font-size: 1rem;
+    color: #555;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb img {
+    width: 10px; /* Adjust width as needed */
+    height: auto;
+    margin: 0 5px; /* Space around arrow icon */
+}
+
+.breadcrumb span {
+    font-weight: bold;
+    color: #333;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .breadcrumb img {
+        width: 8px; /* Smaller arrow icon on smaller screens */
+    }
+}

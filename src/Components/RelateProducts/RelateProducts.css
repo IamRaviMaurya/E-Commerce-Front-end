@@ -1,0 +1,72 @@
+/* RelateProducts.css */
+.relateProducts {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center the label */
+  }
+  
+  .relateProducts h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .related-products-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Reduce the gap between products */
+    justify-content: center; /* Center the products */
+  }
+  
+  /* Item.css */
+  .item {
+    width: 150px; /* Maintain the smaller width */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%; /* Keep the image responsive */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .item p {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .item-price-new {
+    font-size: 0.9rem;
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .item-price-old {
+    font-size: 0.8rem;
+    color: #777;
+    text-decoration: line-through;
+  }
+
+  hr{
+    border: 0;
+    border-top: 2px solid #ff9800; /* Highlight color for the separator */
+    width: 50px; /* Adjust the width as needed */
+    margin: 0 auto 20px auto;
+  }
+  
+  @media (max-width: 500px) {
+    .related-products-item {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row */
+      gap: 10px; /* Add some space between items */
+    }
+  }

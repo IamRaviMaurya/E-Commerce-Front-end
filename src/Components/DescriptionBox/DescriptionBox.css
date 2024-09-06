@@ -1,0 +1,65 @@
+/* DescriptionBox.css */
+
+.descriptionBox {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .descriptionBox-navigator {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .descriptionBox-nav-box,
+  .descriptionBox-nav-box-fade {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .descriptionBox-nav-box {
+    font-weight: bold;
+    border-bottom: 3px solid #ff9800; /* Highlight the active tab */
+    color: #ff9800; /* Match the highlight color */
+  }
+  
+  .descriptionBox-nav-box-fade {
+    color: #777;
+  }
+  
+  .descriptionBox-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .descriptionBox-description p {
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .descriptionBox {
+      padding: 15px;
+    }
+  
+    .descriptionBox-navigator {
+      flex-direction: column;
+      border-bottom: none;
+    }
+  
+    .descriptionBox-nav-box,
+    .descriptionBox-nav-box-fade {
+      padding: 8px 15px;
+    }
+  
+    .descriptionBox-description {
+      font-size: 0.9rem;
+    }
+  }
+  
